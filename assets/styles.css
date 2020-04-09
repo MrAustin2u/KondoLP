@@ -1,4 +1,5 @@
 .main-title {
+  font-family: "Montesserat";
   font-weight: 200;
   color: white !important;
   text-transform: uppercase;
@@ -14,18 +15,19 @@
   color: black;
 }
 
-#firstPage {
+#section1 {
   text-align: center;
   background: url("./images/faucetleak.gif");
   background-size: cover;
 }
 
-#secondPage {
+#section2 {
   text-align: left;
   background-size: cover;
+  color: black;
 }
 
-#thirdPage {
+#section3 {
   text-align: center;
 }
 

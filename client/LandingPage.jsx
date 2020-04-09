@@ -1,13 +1,14 @@
 import React from "react";
 import ReactFullpage from "@fullpage/react-fullpage";
 
-const fullPageOptions = {
+const fullpageOptions = {
+  licenseKey: `OPEN-SOURCE-GPLV3-LICENSE`,
   autoScrolling: true,
   scrollingSpeed: 1000,
-  anchors: ["section1", "section2", "section3"],
+  anchors: ["page1", "page2", "page3"],
   lockAnchors: true,
   navigation: true,
-  //   navigationPosition: "right",
+  navigationPosition: "right",
   navigationTooltips: ["Kondo", "Installation", "About Us"],
   scrollOverFlow: true,
 };
@@ -17,7 +18,7 @@ const LandingPage = (fullpageProps) => (
     {...fullpageProps}
     render={({ state, fullpageApi }) => {
       return (
-        <ReactFullpage.Wrapper {...fullPageOptions}>
+        <ReactFullpage.Wrapper {...fullpageOptions}>
           <div className="section" id="section1">
             <h1 className="main-title">KONDO</h1>
             <button onClick={() => fullpageApi.moveSectionDown()}>
