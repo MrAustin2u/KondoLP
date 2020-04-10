@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+h1 {
+  font-family: "Montserrat";
+  text-align: center;
+  color: white !important;
+  font-size: 4rem;
+}
+
+h2,
+#kondo {
+  font-family: "Montserrat";
+  text-align: center;
+  color: white;
+  font-size: 1rem;
+}
+
+h2,
+#name {
+  font-family: "Montserrat";
+  text-align: center;
+  color: white !important;
+  font-size: 4rem;
+}
+
+#section1 {
+  text-align: center;
+  background: url("../images/faucetleak.gif");
+  background-size: cover;
+}
+
+#section2 {
+  background-size: cover;
+  display: block;
+}
+#section2 h1 {
+  font-family: "Montserrat";
+  text-align: left;
+  color: black !important;
+  margin-left: 2em;
+  font-size: 4rem;
+}
+
+#section3 {
+  background: url("../images/leak.gif");
+  background-size: cover;
+}
+#section3 h1 {
+  font-family: "Montserrat";
+  text-align: left;
+  color: white !important;
+  margin-left: 2em;
+  margin-bottom: 5em;
+  font-size: 4rem;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-column-gap: 1em;
+  padding: 4em;
+}
+.wrapper h2 {
+  font-family: "Montserrat";
+  text-align: center;
+  color: white !important;
+  font-size: 4rem;
+}
+
+figure {
+  max-height: 5px;
+  max-height: 5px;
+}
+
+.fp-slide,
+.fp-slidesContainer {
+  height: 1vw;
+  display: list-item;
+}
+
+.slide {
+  background-size: cover;
+  background-color: black;
+  font-family: "Montserrat";
+  text-align: center;
+}
+.slide fp.tableCell {
+  max-width: 300px;
+  max-height: 300px;
+}
+
+#slide3 {
+  font-family: "Montserrat";
+  text-align: center;
+}
+
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+  background: white !important;
+}
+
+.fp-slidesNav fp-bottom {
+  margin-left: 2em;
+}
+
+/*# sourceMappingURL=styles.css.map */

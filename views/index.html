@@ -3,19 +3,123 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="assets/bundle.js" defer></script>
-    <link rel="stylesheet" href="../assets/styles.css" />
+    <!-- <script src="assets/bundle.js" defer></script> -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.5/fullpage.min.css"
     />
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-      crossorigin="anonymous"
-    />
+<!-- BOOTSTRAP SCRIPT ADDED IN FOR KONDO TEAM PICS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+  integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+  integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../assets/css/styles.css" />
     <title>Kondo</title>
   </head>
-  <body id="lp"></body>
+  <body>
+    <!-- MAIN SECTION -->
+    <div id="fullPage">
+      <div class="section" id="section1">
+        <h1>Kondo</h1>
+        <h2 id="kondo">Find and Visualize Your Application Memory Leaks</h2>
+        <ul>
+          <li>
+            <a clas="section-1-button" rel="noopener" href="https://github.com/oslabs-beta/kondo">GitHub</a>
+          </li>
+        </ul>
+        <div></div>
+      </div>
+      <!-- KONDO INSTALLATION SLIDES -->
+      <div class="section" id="section2">
+        <div class="slide" id="slide1">
+          <h2>
+            Step 1
+          </h2>
+        </div>
+        <div class="slide" id="slide2">
+          <h2>
+            Step 2
+          </h2>
+        </div>
+        <div class="slide" id="slide3">
+          <h2>
+            Step 3
+          </h2>
+        </div>
+      </div>
+      <!-- SECTION 3 OF LANDING PAGE -->
+      <div class="section" id="section3">
+        <h1>Kondo Team</h1>
+        <!-- CSS GRID PICTURES OF KONDO TEAM -->
+        <div class="wrapper">
+          <figure>
+            <img src="../assets/images/Ashley.jpeg" alt="Ashley">
+            <div id="name">
+                <a href="https://github.com/MrAustin2u">GitHub</a>
+              </div>
+            </figure>
+          </div>
+          <div>
+            <figure>
+              <img src="../assets/images/Andie.jpeg" alt="Andie">
+              Andie
+              <div>
+                <a href="https://github.com/andieritter">GitHub</a>
+              </div>
+            </div>
+          </figure>
+          <div>
+            <figure>
+              <span>
+                <img src="../assets/images/Dakota.png" alt="Dakota">
+              </span>
+              Dakota
+              <div>
+                <a href="https://github.com/dgilbrea92">GitHub</a>
+              </div>
+            </div>
+          </figure>
+          <div>
+            Elizabeth
+            <div>
+              <a href="https://github.com/elizabeth87">GitHub</a>
+            </div>
+          </div>
+          <div>
+            Yena
+            <div>
+              <a href="https://github.com/cychoi00">GitHub</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CDN SCRIPT FOR FULLPAGE.JS JAVASCRIPT -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.5/fullpage.min.js"></script>
+    <!-- FUNCTION BELOW CREATES FUNCTIONALITY TO CHILD ELEMENTS OF #FULLPAGE ELEMENT -->
+    <script>
+      new fullpage("#fullPage", {
+        //Navigation options
+        navigation: true,
+        anchors: ["Home", "Installation", "AboutUs"],
+        navigationTooltips: ["Home", "Installation", "About Us"],
+        showActiveTooltip: true,
+        //Scrolling options
+        scrollingHorizontally: true,
+        continuosHorizontal: true,
+        scrollingSpeed: 1000,
+        scrollingNavigaton: true,
+        autoScrolling: true,
+        resetSliders: true,
+        //Accessibility options
+        keyboardScrolling: true,
+        //Design options
+        parallax: true,
+        parallaxOption:{ type: 'reveal', percentage: 62, property: 'translate' },
+        controlArrows: false,
+        slidesNavigation: true,
+      });
+    </script>
+  </body>
 </html>
